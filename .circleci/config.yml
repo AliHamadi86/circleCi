@@ -31,4 +31,5 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - next-stage
+      - next-stage:
+          requires: say-hello
