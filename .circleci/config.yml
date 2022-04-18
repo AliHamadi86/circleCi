@@ -17,10 +17,10 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"   
-    ali:
-     docker: 
+  test:
+    docker:  
        - image: cimg/base:stable
-     steps:
+    steps:
        - checkout
        - run:
            command: "echo next"
@@ -30,4 +30,4 @@ jobs:
 workflows:
    build-and-test:
     jobs:
-      - build
+      - test
