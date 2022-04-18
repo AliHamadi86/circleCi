@@ -22,7 +22,8 @@ jobs:
        - image: cimg/base:stable
      steps:
        - checkout
-       - command: "echo next"
+       - run:
+           command: "echo next"
           
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
