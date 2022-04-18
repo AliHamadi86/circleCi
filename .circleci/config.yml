@@ -30,4 +30,6 @@ jobs:
 workflows:
    build-and-test:
     jobs:
-      - test
+      - build
+      - test:
+        - requires: build
